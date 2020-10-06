@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+#score {
+    position: absolute;
+    left: 90vw;
+    top: 7px;
+    text-decoration: underline;
+    color: deepskyblue;
+}
+
+.game {
+    width: 100vw;
+    height: 100vh;
+    background: url("./assets/home.jpg") no-repeat;
+    background-size: cover;
+}
+
+.doremon {
+    width: 140px;
+    height: 190px;
+    background: url(./assets/Doraemon.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 16vw;
+}
+
+.doracake {
+    width: 118px;
+    height: 84px;
+    background: url(./assets/snack_a18.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 3px;
+    left: 80vw;
+}
+
+.jump {
+    animation: jump 0.6s linear;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 270px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.doracakeanimation {
+    animation: dorani 4s linear infinite;
+}
+
+@keyframes dorani {
+    0% {
+        left: 100vw;
+    }
+
+    100% {
+        left: -5vw;
+    }
+}
+
+#gameover {
+    visibility: hidden;
+    font-size: 18vw;
+    margin-top: 34vh;
+    color: skyblue;
+    font-family: sans-serif;
+}
+
+.cooljump {
+    animation: cooljump 0.6s linear;
+}
+
+@keyframes cooljump {
+    0% {
+        bottom: 0;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        bottom: 135px;
+        transform: rotate(90deg);
+    }
+
+    50% {
+        bottom: 270px;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        bottom: 135px;
+        transform: rotate(270deg);
+    }
+
+    100% {
+        bottom: 0;
+        transform: rotate(360deg);
+    }
+}
